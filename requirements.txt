@@ -6,3 +6,4 @@ django
 gunicorn
 requests
 BeautifulSoup4
+bs4
