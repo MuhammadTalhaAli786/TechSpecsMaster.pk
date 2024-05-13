@@ -5,5 +5,4 @@ apscheduler
 django
 gunicorn
 requests
-BeautifulSoup4
-bs4
+beautifulsoup4
