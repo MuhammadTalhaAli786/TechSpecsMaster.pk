@@ -70,7 +70,7 @@ def getInTouch(request):
         except Exception as e:
             print("exception", e)
 
-    return redirect("contact")
+    return redirect("home:contact")
 
 
 """
@@ -108,7 +108,7 @@ def dashboard(request):
                        }
                       )
     else:
-        return redirect("home")
+        return redirect("home:home")
         
 def addToWishlist(request,id):
     if request.user.is_authenticated:

@@ -64,7 +64,7 @@
                     <div class="header-compaire">
                         {% if request.user.is_authenticated %}
                             
-                        <a href="{% url 'dashboard' %}" class="cart-item">
+                        <a href="{% url 'home:dashboard' %}" class="cart-item">
                             <div class="bg-black text-white rounded-5 px-3 py-1">
 
                                 <h5 class="text-white ">{{ request.user.username|slice:":1"|upper }}</h5>                            
