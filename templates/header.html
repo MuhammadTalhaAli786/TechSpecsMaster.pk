@@ -5,7 +5,7 @@
         <div class="container">
             <div class="header-center">
                 <div class="logo">
-                    <a href="{% url 'home' %}">
+                    <a href="{% url 'home:home' %}">
                         
                         <img src="{% static '/assets/images/logos/logo.webp' %}" alt="logo">
                     </a>
@@ -64,7 +64,7 @@
                     <div class="header-compaire">
                         {% if request.user.is_authenticated %}
                             
-                        <a href="{% url 'dashboard' %}" class="cart-item">
+                        <a href="{% url 'home:dashboard' %}" class="cart-item">
                             <div class="bg-black text-white rounded-5 px-3 py-1">
 
                                 <h5 class="text-white ">{{ request.user.username|slice:":1"|upper }}</h5>                            
@@ -91,7 +91,7 @@
                     </svg>
                 </span>
             </button>
-            <a href="{% url 'home' %}" class="mobile-header-logo">
+            <a href="{% url 'home:home' %}" class="mobile-header-logo">
                 <img src="{% static '/assets/images/logos/logo.webp' %}" alt="logo">
             </a>
             <a href="" class="header-cart cart-item">
@@ -172,7 +172,7 @@
                                     <div class="dropdown-list-item d-flex">
                                         <span class="dropdown-img">
 
-                                            <img src="{% static '/assets/images/logos/category-img/laptops.webp' %}
+                                            <img src="{% static '/assets/images/homepage-one/category-img/laptops.webp' %}
 "
                                                 alt="dress">
                                         </span>
@@ -200,7 +200,7 @@
                                 <div class="dropdown-item d-flex justify-content-between align-items-center">
                                     <div class="dropdown-list-item d-flex">
                                         <span class="dropdown-img">
-                                            <img src="{% static '/assets/images/logos/category-img/mobiles.webp' %}
+                                            <img src="{% static '/assets/images/homepage-one/category-img/mobiles.webp' %}
 "
                                                 alt="Mobiles">
                                         </span>
@@ -227,7 +227,7 @@
                                 <div class="dropdown-item d-flex justify-content-between align-items-center">
                                     <div class="dropdown-list-item d-flex">
                                         <span class="dropdown-img">
-                                            <img src="{% static '/assets/images/logos/category-img/mobiles.webp' %}
+                                            <img src="{% static '/assets/images/homepage-one/category-img/mobiles.webp' %}
 "
                                                 alt="tablets">
                                         </span>
@@ -254,7 +254,7 @@
                                 <div class="dropdown-item d-flex justify-content-between align-items-center">
                                     <div class="dropdown-list-item d-flex">
                                         <span class="dropdown-img">
-                                            <img src="{% static '/assets/images/logos/category-img/smartwatch.webp' %}"
+                                            <img src="{% static '/assets/images/homepage-one/category-img/smartwatch.webp' %}"
                                                 alt="tablets">
                                         </span>
                                         <span class="dropdown-text">
@@ -280,7 +280,7 @@
                                 <div class="dropdown-item d-flex justify-content-between align-items-center">
                                     <div class="dropdown-list-item d-flex">
                                         <span class="dropdown-img">
-                                            <img src="{% static '/assets/images/logos/category-img/earbuds.webp' %}"
+                                            <img src="{% static '/assets/images/homepage-one/category-img/earbuds.webp' %}"
                                                 alt="earbuds">
                                         </span>
                                         <span class="dropdown-text">
@@ -306,7 +306,7 @@
                                 <div class="dropdown-item d-flex justify-content-between align-items-center">
                                     <div class="dropdown-list-item d-flex">
                                         <span class="dropdown-img">
-                                            <img src="{% static '/assets/images/logos/category-img/speakers.webp' %}"
+                                            <img src="{% static '/assets/images/homepage-one/category-img/speakers.webp' %}"
                                                 alt="speakers">
                                         </span>
                                         <span class="dropdown-text">
@@ -359,7 +359,7 @@
                                     <div class="dropdown-item">
                                         <div class="dropdown-list-item">
                                             <span class="dropdown-img">
-                                                <img src="{% static '/assets/images/logos/category-img/laptops.webp' %}
+                                                <img src="{% static '/assets/images/homepage-one/category-img/laptops.webp' %}
 "
                                                     alt="dress">
                                             </span>
@@ -386,7 +386,7 @@
                                     <div class="dropdown-item d-flex justify-content-between align-items-center">
                                         <div class="dropdown-list-item d-flex">
                                             <span class="dropdown-img">
-                                                <img src="{% static '/assets/images/logos/category-img/mobiles.webp' %}
+                                                <img src="{% static '/assets/images/homepage-one/category-img/mobiles.webp' %}
 "
                                                     alt="Mobiles">
                                             </span>
@@ -413,7 +413,7 @@
                                     <div class="dropdown-item d-flex justify-content-between align-items-center">
                                         <div class="dropdown-list-item d-flex">
                                             <span class="dropdown-img">
-                                                <img src="{% static '/assets/images/logos/category-img/mobiles.webp' %}
+                                                <img src="{% static '/assets/images/homepage-one/category-img/mobiles.webp' %}
 "
                                                     alt="tablets">
                                             </span>
@@ -440,7 +440,7 @@
                                     <div class="dropdown-item d-flex justify-content-between align-items-center">
                                         <div class="dropdown-list-item d-flex">
                                             <span class="dropdown-img">
-                                                <img src="{% static '/assets/images/logos/category-img/smartwatch.webp' %}"
+                                                <img src="{% static '/assets/images/homepage-one/category-img/smartwatch.webp' %}"
                                                     alt="tablets">
                                             </span>
                                             <span class="dropdown-text">
@@ -466,7 +466,7 @@
                                     <div class="dropdown-item d-flex justify-content-between align-items-center">
                                         <div class="dropdown-list-item d-flex">
                                             <span class="dropdown-img">
-                                                <img src="{% static '/assets/images/logos/category-img/earbuds.webp' %}"
+                                                <img src="{% static '/assets/images/homepage-one/category-img/earbuds.webp' %}"
                                                     alt="earbuds">
                                             </span>
                                             <span class="dropdown-text">
@@ -492,7 +492,7 @@
                                     <div class="dropdown-item d-flex justify-content-between align-items-center">
                                         <div class="dropdown-list-item d-flex">
                                             <span class="dropdown-img">
-                                                <img src="{% static '/assets/images/logos/category-img/speakers.webp' %}"
+                                                <img src="{% static '/assets/images/homepage-one/category-img/speakers.webp' %}"
                                                     alt="speakers">
                                             </span>
                                             <span class="dropdown-text">
@@ -518,7 +518,7 @@
                                     <div class="dropdown-item d-flex justify-content-between align-items-center">
                                         <div class="dropdown-list-item d-flex">
                                             <span class="dropdown-img">
-                                                <img src="{% static '/assets/images/logos/category-img/tv.webp' %}"
+                                                <img src="{% static '/assets/images/homepage-one/category-img/tv.webp' %}"
                                                     alt="watch">
                                             </span>
                                             <span class="dropdown-text">
@@ -544,7 +544,7 @@
                                     <div class="dropdown-item d-flex justify-content-between align-items-center">
                                         <div class="dropdown-list-item d-flex">
                                             <span class="dropdown-img">
-                                                <img src="{% static '/assets/images/logos/category-img/powerbank.webp' %}"
+                                                <img src="{% static '/assets/images/homepage-one/category-img/powerbank.webp' %}"
                                                     alt="watch">
                                             </span>
                                             <span class="dropdown-text">
@@ -572,7 +572,7 @@
                 <div class="header-nav-menu">
                     <ul class="menu-list">
                         <li>
-                            <a href="{% url 'home' %}">
+                            <a href="{% url 'home:home' %}">
                                 <span class="list-text">Home</span>
                             </a>
                         </li>
@@ -623,12 +623,12 @@
                             </div>
                         </li>
                         <li>
-                            <a href="{% url 'about' %}">
+                            <a href="{% url 'home:about' %}">
                                 <span class="list-text">About</span>
                             </a>
                         </li>
                         <li>
-                            <a href="{% url 'contact' %}">
+                            <a href="{% url 'home:contact' %}">
                                 <span class="list-text">Contact</span>
                             </a>
                         </li>

@@ -36,7 +36,7 @@
 .flash {
 
     .flash-sale {
-        background: url("../assets/images/logos/flash-sale.webp") no-repeat center / cover;
+        background: url("../assets/images/homepage-one/flash-sale.webp") no-repeat center / cover;
         height: 44rem;
         border-radius: .5rem;
         padding: 6.5rem;
@@ -201,13 +201,13 @@
         padding-top: 6rem;
 
         .wrapper-one {
-            background: url("../assets/images/logos/style-bg-three.webp") no-repeat center / cover;
+            background: url("../assets/images/homepage-one/style-bg-three.webp") no-repeat center / cover;
             @include flexItem($justify: flex-end, $align: flex-start);
 
         }
 
         .wrapper-two {
-            background: url("../assets/images/logos/style-bg-four.webp") no-repeat center / cover;
+            background: url("../assets/images/homepage-one/style-bg-four.webp") no-repeat center / cover;
         }
     }
 

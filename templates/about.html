@@ -14,7 +14,7 @@
     <section class="blog about-blog">
         <div class="container">
             <div class="blog-bradcrum">
-                <span><a href="{% url 'home' %}">Home</a></span>
+                <span><a href="{% url 'home:home' %}">Home</a></span>
                 <span class="devider">/</span>
                 <span><a href="#">About Us</a></span>
             </div>
@@ -46,7 +46,7 @@
                             </div>
                             <div class="testimonial-info">
                                 <div class="testimonial-img">
-                                    <img width="280px" height="180px" src="{% static '/assets/images/logos/about/mKhalilAfzal.jpg' %}" alt="img">
+                                    <img width="280px" height="180px" src="{% static '/assets/images/homepage-one/about/mKhalilAfzal.jpg' %}" alt="img">
                                 </div>
                                 <div class="testimonial-info-details">
                                     <h5 class="testimonial-name">Dr. Muhammad Khalil Afzal</h5>
@@ -97,7 +97,7 @@
                             </div>
                             <div class="testimonial-info">
                                 <div class="testimonial-img">
-                                    <img width="250px" height="180px" src="{% static '/assets/images/logos/about/mTalhaAli.jpg' %}" alt="img">
+                                    <img width="250px" height="180px" src="{% static '/assets/images/homepage-one/about/mTalhaAli.jpg' %}" alt="img">
                                 </div>
                                 <div class="testimonial-info-details">
                                     <h5 class="testimonial-name">Muhammad Talha Ali</h5>
@@ -147,7 +147,7 @@
                             </div>
                             <div class="testimonial-info">
                                 <div class="testimonial-img">
-                                    <img width="280px" height="180px" src="{% static '/assets/images/logos/about/mHaroonTariq.jpg' %}" alt="img">
+                                    <img width="280px" height="180px" src="{% static '/assets/images/homepage-one/about/mHaroonTariq.jpg' %}" alt="img">
                                 </div>
                                 <div class="testimonial-info-details">
                                     <h5 class="testimonial-name">Muhammad Haroon Tariq</h5>
@@ -201,7 +201,7 @@
                 <div class="row align-items-center gy-5">
                     <div class="col-lg-6">
                         <div class="about-img" data-aos="fade-right">
-                            <img src=".{% static '/assets/images/logos/about/about-img-1.webp' %}" alt="img">
+                            <img src=".{% static '/assets/images/homepage-one/about/about-img-1.webp' %}" alt="img">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -267,7 +267,7 @@
                                 </ul>
                             </div>
 
-                            <a href="{% url 'contact' %}" class="shop-btn">
+                            <a href="{% url 'home:contact' %}" class="shop-btn">
                                 Contact us
                                 <span>
                                     <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
