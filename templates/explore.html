@@ -370,7 +370,7 @@
             if (searchParams !== null) {
                 queryString += '&q=' + searchParams;
             }
-                let newURL = `http://127.0.0.1:8000/products/{{currentUrl}}/1?${queryString}`;
+                let newURL = `https://techspecsmaster.onrender.com/products/{{currentUrl}}/1?${queryString}`;
                 window.location.href = newURL;
             };
         
@@ -442,7 +442,7 @@
             if (searchParams !== null) {
                 queryString += '&q=' + searchParams;
             }
-            const exploreUrl = 'http://127.0.0.1:8000/products/'+'{{currentUrl}}/1' + '?' + queryString;
+            const exploreUrl = 'https://techspecsmaster.onrender.com/products/'+'{{currentUrl}}/1' + '?' + queryString;
             window.location.href = exploreUrl;
         });
     
@@ -542,7 +542,7 @@
                     {
                         continue
                     }
-                    a.href = 'http://127.0.0.1:8000/products/'+'{{currentUrl}}/'+p + '?' + queryString 
+                    a.href = 'https://techspecsmaster.onrender.com/products/'+'{{currentUrl}}/'+p + '?' + queryString 
                     button.classList.add('shop-btn')
                     button.classList.add('mx-2')
                     button.innerText = i
@@ -555,7 +555,7 @@
                 const a = document.createElement('a')
                 const p = currentPage
                 
-                a.href = 'http://127.0.0.1:8000/products/'+'{{currentUrl}}/'+p + '?' + queryString 
+                a.href = 'https://techspecsmaster.onrender.com/products/'+'{{currentUrl}}/'+p + '?' + queryString 
 
                 button.classList.add('shop-btn')
                 button.classList.add('mx-2')
@@ -576,7 +576,7 @@
                 {
                     continue
                 }
-                    a.href = 'http://127.0.0.1:8000/products/'+'{{currentUrl}}/'+p + '?' + queryString 
+                    a.href = 'https://techspecsmaster.onrender.com/products/'+'{{currentUrl}}/'+p + '?' + queryString 
 
                 button.classList.add('shop-btn')
                 button.classList.add('mx-2')
