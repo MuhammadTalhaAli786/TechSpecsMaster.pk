@@ -27,7 +27,6 @@ SECRET_KEY = 'django-insecure-m(_n(%&gb0ekoa4#jy@hs+nzgjedxji9ksjfn_vl71w$#u7kz2
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -41,6 +40,7 @@ LOGGING = {
         'level': 'DEBUG',
     },
 }
+
 
 # Application definition
 
@@ -57,7 +57,6 @@ INSTALLED_APPS = [
     'recommendation_utils',
     'products',
 ]
-
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
