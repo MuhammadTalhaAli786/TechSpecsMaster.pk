@@ -34,9 +34,7 @@
 }
 
 .wrapper-one {
-    // background: url("assets/images/logos/syle-bg-one.webp") no-repeat center / cover;
-    background: url("{% static 'assets/images/logos/style-bg-one.webp' %}") no-repeat center/cover;
-
+    background: url("../assets/images/logos/syle-bg-one.webp") no-repeat center / cover;
 
     .shop-btn {
         @include shopBtn($btn-bg: $secondary-theme, $bf-color: $heading);
@@ -48,9 +46,7 @@
 }
 
 .wrapper-two {
-    background: url("{% static 'assets/images/logos/style-bg-two.webp' %}") no-repeat center/cover;
-
-    // background: url("assets/images/logos/style-bg-two.webp") no-repeat center / cover;
+    background: url("../assets/images/logos/style-bg-two.webp") no-repeat center / cover;
 
     .shop-btn {
         @include shopBtn();
