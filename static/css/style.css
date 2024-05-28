@@ -1313,7 +1313,7 @@ button {
 }
 
 .wrapper-two {
-  background: url("../assets/images/homepage-one/style-bg-two.webp") no-repeat center/cover;
+  background: url("assets/images/homepage-one/style-bg-two.webp") no-repeat center/cover;
 }
 .wrapper-two .shop-btn {
   padding: 1.2rem 3.4rem;
