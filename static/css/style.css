@@ -1313,9 +1313,7 @@ button {
 }
 
 .wrapper-two {
-  /* background: url("assets/images/homepage-one/style-bg-two.webp") no-repeat center/cover; */
-  background: url("{% static 'assets/images/homepage-one/style-bg-two.webp' %}") no-repeat center/cover;
-
+  background: url("../assets/images/homepage-one/style-bg-two.webp") no-repeat center/cover;
 }
 .wrapper-two .shop-btn {
   padding: 1.2rem 3.4rem;
@@ -1502,9 +1500,7 @@ button {
 }
 
 .flash .flash-sale {
-  /* background: url("../assets/images/homepage-one/flash-sale.webp") no-repeat center/cover; */
-  background: url("{% static 'assets/images/homepage-one/flash-sale.webp' %}") no-repeat center/cover;
-
+  background: url("../assets/images/homepage-one/flash-sale.webp") no-repeat center/cover;
   height: 44rem;
   border-radius: 0.5rem;
   padding: 6.5rem;
@@ -1677,9 +1673,7 @@ button {
   padding-top: 6rem;
 }
 .weekly-sale .style-section .wrapper-one {
-  /* background: url("../assets/images/homepage-one/style-bg-three.webp") no-repeat center/cover; */
-  background: url("{% static 'assets/images/homepage-one/style-bg-three.webp' %}") no-repeat center/cover;
-
+  background: url("../assets/images/homepage-one/style-bg-three.webp") no-repeat center/cover;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -1687,9 +1681,7 @@ button {
   gap: 0px;
 }
 .weekly-sale .style-section .wrapper-two {
-  /* background: url("../assets/images/homepage-one/style-bg-four.webp") no-repeat center/cover; */
-  background: url("{% static 'assets/images/homepage-one/style-bg-four.webp' %}") no-repeat center/cover;
-
+  background: url("../assets/images/homepage-one/style-bg-four.webp") no-repeat center/cover;
 }
 @media (max-width:767px) {
   .weekly-sale h5 {
@@ -1729,9 +1721,7 @@ button {
 }
 
 .footer {
-  /* background: url("../assets/images/homepage-one/footer-bg.webp"); */
-  background: url("{% static 'assets/images/homepage-one/footer-bg.webp' %}") no-repeat center/cover;
-
+  background: url("../assets/images/homepage-one/footer-bg.webp");
   font-family: "League Spartan", sans-serif;
 }
 
@@ -2274,9 +2264,7 @@ hr {
 }
 
 .sidebar-shop-section {
-  /* background: url("../assets/images/homepage-one/sidebar-img.png"); */
-  background: url("{% static 'assets/images/homepage-one/sidebar-img.webp' %}") no-repeat center/cover;
-
+  background: url("../assets/images/homepage-one/sidebar-img.png");
   padding: 3rem;
   margin-top: 3rem;
   height: 29.5rem;
@@ -2356,9 +2344,7 @@ hr {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  /* background: url("../assets/images/homepage-one/product-deal-.webp") no-repeat center/cover; */
-  background: url("{% static 'assets/images/homepage-one/product-deal-.webp' %}") no-repeat center/cover;
-
+  background: url("../assets/images/homepage-one/product-deal-.webp") no-repeat center/cover;
 }
 .product-deal-section .wrapper-heading {
   color: #FFFFFF;
@@ -2701,9 +2687,7 @@ hr {
   color: #AE1C9A;
 }
 .blog-post-section .newsletter {
-  /* background: url("../assets/images/homepage-one/newsletter.webp") no-repeat center/cover; */
-  background: url("{% static 'assets/images/homepage-one/newsletter.webp' %}") no-repeat center/cover;
-
+  background: url("../assets/images/homepage-one/newsletter.webp") no-repeat center/cover;
 }
 .blog-post-section .newsletter .post-details,
 .blog-post-section .newsletter .blog-paragraph {
@@ -3082,9 +3066,7 @@ table .ticket-row:hover {
 }
 
 .login {
-  /* background: url("../assets/images/homepage-one/login-bg.webp") no-repeat center/cover; */
-  background: url("{% static 'assets/images/homepage-one/login-bg.webp' %}") no-repeat center/cover;
-
+  background: url("../assets/images/homepage-one/login-bg.webp") no-repeat center/cover;
 }
 
 .login-section {
@@ -3278,8 +3260,7 @@ table .ticket-row:hover {
 }
 
 .seller-wrapper {
-  /* background: url("../assets/images/homepage-one/sallers-cover.png") no-repeat center/cover; */
-  background: url("{% static 'assets/images/homepage-one/sallers-cover.webp' %}") no-repeat center/cover;
+  background: url("../assets/images/homepage-one/sallers-cover.png") no-repeat center/cover;
   min-height: 32.8rem;
   padding: 2.5rem;
   border-radius: 0.5rem;
