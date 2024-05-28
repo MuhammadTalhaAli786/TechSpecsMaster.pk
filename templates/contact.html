@@ -12,7 +12,7 @@
     <section class="blog about-blog">
         <div class="container">
             <div class="blog-bradcrum">
-                <span><a href="{% url  'home:home' %}">Home</a></span>
+                <span><a href="{% url  'home' %}">Home</a></span>
                 <span class="devider">/</span>
                 <span><a href="#">Contact</a></span>
             </div>
@@ -125,7 +125,7 @@
                                 <h5 class="comment-title">Get In Touch</h5>
                                 <div class=" account-inner-form">
                                     <div class="review-form-name">
-                                        <form action="{% url 'home:getInTouch' %}" method="post">
+                                        <form action="{% url 'getInTouch' %}" method="post">
                                         {% csrf_token %}
 
                                             <label for="fname" class="form-label">Name*</label>

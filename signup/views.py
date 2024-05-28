@@ -9,7 +9,7 @@ from django.contrib import messages
 # Create your views here.
 def register(request):
     if request.user.is_authenticated:
-        return redirect('home:home')
+        return redirect('home')
     if request.method == 'POST':
         first_name = request.POST['fname']
         last_name = request.POST['lname']
@@ -35,12 +35,12 @@ def register(request):
         messages.success(request, "New account created successfully!")
 
         login(request, user)
-        return redirect('home:home')
+        return redirect('home')
     return render(request, 'create-account.html')
 
 def loginView(request):
     if request.user.is_authenticated:
-        return redirect('home:home')
+        return redirect('home')
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
@@ -48,7 +48,7 @@ def loginView(request):
         if user is not None:
             login(request, user)
             messages.success(request, "Login successful!")
-            return redirect('home:home')
+            return redirect('home')
         else:
             print("Inccorect user name or password")
             messages.info(request, "Invalid username or password.")
@@ -58,4 +58,4 @@ def loginView(request):
 def logoutView(request):
     logout(request)
     messages.success(request, "Suucessfully logged out!")
-    return redirect('home:home')
+    return redirect('home')

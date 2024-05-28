@@ -19,15 +19,15 @@
 
     <!--------------- swiper-css ---------------->
     
-    <link rel="stylesheet" href="{% static 'css/swiper10-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/swiper10-bundle.min.css' %}">
 
     <!--------------- bootstrap-css ---------------->
-    <link rel="stylesheet" href="{% static 'css/bootstrap-5.3.2.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/bootstrap-5.3.2.min.css' %}">
 
 
  
     <!---------------------- Range Slider ------------------->
-    <link rel="stylesheet" href="{% static 'css/nouislider.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/nouislider.min.css' %}">
     
 
     <!---------------------- Scroll ------------------->
@@ -35,7 +35,7 @@
 
     <!--------------- additional-css ---------------->
     
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
 
 
 
@@ -114,10 +114,7 @@ for (let index = 0; index < wishlistBtn.length; index++) {
 
         const id = element.getAttribute('data-id')
         console.log(id)
-
-        const addToWishlistUrl = `{% url 'home:addToWishlist' '999' %}`.replace('999', id);
-
-        fetch(addToWishlistUrl)
+        fetch(`http://127.0.0.1:8000//wishlist/${id}`)
         .then(response =>{
             if (response.ok){
                 console.log(response)
@@ -141,9 +138,7 @@ for (let index = 0; index < removeWishlist.length; index++) {
     const element = removeWishlist[index];
     element.addEventListener('click',(event)=>{
         const id = element.getAttribute('data-id')
-        const addToWishlistUrl = `{% url 'home:removeFromWishlist' '999' %}`.replace('999', id);
-
-        fetch(removeFromWishlist)
+        fetch(`http://127.0.0.1:8000//removeFromWishlist/${id}`)
         .then(response =>{
             if (response.ok){
                 return response.json()
