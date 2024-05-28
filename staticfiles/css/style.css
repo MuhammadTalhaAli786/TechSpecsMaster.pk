@@ -1315,7 +1315,6 @@ button {
 .wrapper-two {
   background: url("assets/images/homepage-one/style-bg-two.webp") no-repeat center/cover;
 }
-
 .wrapper-two .shop-btn {
   padding: 1.2rem 3.4rem;
   margin: 4rem 0;
@@ -2570,9 +2569,7 @@ hr {
   margin-bottom: 2rem;
   width: 100%;
 }
-.review-form input {
-  height: 5rem;
-}
+
 .review-form input,
 .review-form textarea,
 .review-form select {
